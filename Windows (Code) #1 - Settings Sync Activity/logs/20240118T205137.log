@@ -1,0 +1,28 @@
+2024-01-18 20:51:42.586 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2024-01-18 20:51:42.586 [info] Auto Sync is enabled.
+2024-01-18 20:51:42.587 [info] Auto Sync: Suspended until auth token is available.
+2024-01-18 20:51:44.127 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/extensions
+2024-01-18 20:51:45.504 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/globalState
+2024-01-18 20:51:45.649 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/keybindings
+2024-01-18 20:51:45.796 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/profiles
+2024-01-18 20:51:46.018 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/settings
+2024-01-18 20:51:46.404 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/snippets
+2024-01-18 20:51:46.472 [info] Deleting non existing profile from backup /C:/Users/franc/AppData/Roaming/Code/User/sync/tasks
+2024-01-18 20:51:47.753 [info] Auto Sync: Triggered by Interval
+2024-01-18 20:51:47.753 [info] Sync started.
+2024-01-18 20:51:48.264 [info] Settings: Last sync resource does not exist locally.
+2024-01-18 20:51:48.676 [info] Settings: No changes found during synchronizing settings.
+2024-01-18 20:51:48.682 [info] Keybindings: Last sync resource does not exist locally.
+2024-01-18 20:51:48.849 [info] Keybindings: No changes found during synchronizing keybindings.
+2024-01-18 20:51:48.854 [info] Snippets: Last sync resource does not exist locally.
+2024-01-18 20:51:48.964 [info] Snippets: No changes found during synchronizing snippets.
+2024-01-18 20:51:48.967 [info] Tasks: Last sync resource does not exist locally.
+2024-01-18 20:51:49.044 [info] Tasks: No changes found during synchronizing tasks.
+2024-01-18 20:51:49.048 [info] GlobalState: Last sync resource does not exist locally.
+2024-01-18 20:51:50.017 [info] GlobalState: Updated remote ui state. Updated: commandPalette.mru.cache,commandPalette.mru.counter.
+2024-01-18 20:51:50.026 [info] GlobalState: Updated last synchronized ui state
+2024-01-18 20:51:50.031 [info] Extensions: Last sync resource does not exist locally.
+2024-01-18 20:51:50.298 [info] Extensions: No changes found during synchronizing extensions.
+2024-01-18 20:51:50.301 [info] Profiles: Last sync resource does not exist locally.
+2024-01-18 20:51:50.382 [info] Profiles: No changes found during synchronizing profiles.
+2024-01-18 20:51:50.387 [info] Sync done. Took 2636ms
