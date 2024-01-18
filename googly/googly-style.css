@@ -1,0 +1,141 @@
+.googly {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.googly .div {
+  background-color: #ffffff;
+  width: 920.89px;
+  height: 618px;
+  position: relative; 
+}
+
+.googly .img {
+  position: absolute;
+  width: 567px;
+  height: 119px;
+  top: 45px;
+  left: 177px;
+  object-fit: cover;
+}
+
+.googly .group {
+  position: absolute;
+  width: 529px;
+  height: 132px;
+  top: 243px;
+  left: 196px;
+}
+
+.googly .group-2 {
+  position: absolute;
+  width: 53px;
+  height: 104px;
+  top: 0;
+  left: 478px;
+}
+
+.googly .rectangle {
+  position: absolute;
+  width: 51px;
+  height: 61px;
+  top: 0;
+  left: 0;
+  background-color: #ff0000;
+}
+
+.googly .text-wrapper {
+  position: absolute;
+  height: 28px;
+  top: 76px;
+  left: 5px;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 25.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  white-space: nowrap;
+}
+
+.googly .group-3 {
+  position: absolute;
+  width: 145px;
+  height: 104px;
+  top: 0;
+  left: 200px;
+}
+
+.googly .rectangle-2 {
+  left: 47px;
+  position: absolute;
+  width: 51px;
+  height: 61px;
+  top: 0;
+  object-fit: cover;
+}
+
+.googly .text-wrapper-2 {
+  position: absolute;
+  height: 28px;
+  top: 76px;
+  left: 0;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 25.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  white-space: nowrap;
+}
+
+.googly .group-4 {
+  position: absolute;
+  width: 84px;
+  height: 119px;
+  top: 14px;
+  left: 0;
+}
+
+.googly .rectangle-3 {
+  left: 16px;
+  position: absolute;
+  width: 51px;
+  height: 61px;
+  top: 0;
+  object-fit: cover;
+}
+
+.googly .tipos-de-pl-stico {
+  position: absolute;
+  height: 56px;
+  top: 63px;
+  left: 0;
+  font-family: "VT323", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 25.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 27.8px;
+}
+
+.googly .text-wrapper-3 {
+  position: absolute;
+  height: 28px;
+  top: 190px;
+  left: 248px;
+  font-family: "Kyiv*Type Serif-Regular2", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 25.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  white-space: nowrap;
+}
