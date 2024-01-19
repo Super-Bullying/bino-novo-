@@ -117,13 +117,13 @@
                 </div>
                 <div class="text">bino.txt</div>
             </label>
-     <!--       <label for="windows-minesweeper-input" class="desktop-item">
+            <label for="windows-minesweeper-input" class="desktop-item">
                 <div class="icon">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBhgXExWY7op1AAABHElEQVRIx81VWw7DIAwz0+4FR0tvBifLPsIjIdBWqyYtVUHbsB0bxIB/LwafL3idw1lIvia4UeGk+VsrgwMFmQe+AAASxm87MgYzyyiVzZh5rBigt2+Iu2pGRAFwiP7SibMg8DjBgIzUjBjURNB6K85fBpAWBG4bC0o3kNVM69wMQdXPZtRzajQqxGAJxH0xjq02TbjWAYOb86OHxmCQIlBUfStfTZsBREQcSLVtqyov9W/IGJHDoY4MMTHqKA/V1zy9A5VEUbpk/M+fBWVCtDswB2jgLsRaWQHn9Gl7FkwWw7tOgZz3LQEUZEuBCwqsdZfw4Aiuy2BsiHwdE00i/kq7U9v7QN9460v15EbcREoXqT/+X7jRw68lntYHCbPf2nyUk7MAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjRUMjM6MTk6MjEtMDQ6MDCCvYp2AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI0VDIzOjE5OjIxLTA0OjAw8+AyygAAAABJRU5ErkJggg=="
                          alt="" />
                 </div>
                 <div class="text">Minesweeper</div>
-            </label> -->
+            </label>
             <label for="windows-update-input" class="desktop-item update">
                 <div class="icon">
                     <img src="img/update.png"
@@ -373,8 +373,8 @@ top: 100px;">
 
 
 
-        <div id="plastico" class="window ie max windows-box-shadow" style="width: 500px; height: 300px; position: absolute; left: 150px;
-top: 150px;">
+        <div id="plastico" class="window janela ie max windows-box-shadow" style="width: 500px; height: 300px; position: absolute; left: 100px;
+top: 100px;">
 
 
 
@@ -491,38 +491,36 @@ top: 150px;">
 
             <div class="content white">
 
+                 <div id="plastico2-icon">
+                            <div class="desktop-item">
+                                <div class="icon"><img src="img/folder1.png" alt="" /></div>
+                                <div class="text">plástico 2</div>
+                            </div>
+                        </div>
 
 
-                <div id="experiencia-icon"> 
-                    <div class="desktop-item">
-                        <div class="icon"><img src="img/folder1.png" alt="" /></div>
-                        <div class="text">Plástico 2</div>
-                    </div>
-                </div>
+                        <script>
+                                                document.getElementById('plastico2-icon').addEventListener('click', function () {
+                                                var plastico2Tab = document.getElementById('plastico2-tab');
+                                                var plastico2Window = document.getElementById('plastico2');
+
+                                                if (plasticoTab.style.display === 'flex') {
+
+                                                    plastico2Window.style.display = 'none';
+
+                                                    plastico2Tab.classList.remove('tab-novo');
+                                                    plastico2Tab.classList.add('tab-novo-2');
 
 
-                <script>
-                document.getElementById('experiencia-icon').addEventListener('click', function () {
-                var experienciaTab = document.getElementById('experiencia-tab');
-                var experienciaWindow = document.getElementById('experiencia');
+                                                } else {
+                                                    plastico2Tab.style.display = 'flex';
+                                                    plastico2Window.style.display = 'block';
 
-                if (experienciaTab.style.display === 'flex') {
-
-                    experienciaWindow.style.display = 'none';
-
-                    experienciaTab.classList.remove('tab-novo');
-                    experienciaTab.classList.add('tab-novo-2');
-
-
-                } else {
-                    experienciaTab.style.display = 'flex';
-                    experienciaWindow.style.display = 'block';
-
-                    experienciaTab.classList.remove('tab-novo-2');
-                    experienciaTab.classList.add('tab-novo');
-                }
-            });
-            </script>
+                                                    plastico2Tab.classList.remove('tab-novo-2');
+                                                    plastico2Tab.classList.add('tab-novo');
+                                                }
+                                            });
+                        </script>
 
             </div>
 
@@ -534,8 +532,8 @@ top: 150px;">
 
 
 
-       <div id="experiencia" class="window ie max windows-box-shadow" style="width: 500px; height: 300px; position: absolute; left: 120px;
-top: 120px;">
+        <div id="plastico2" class="window ie max windows-box-shadow" style="width: 500px; height: 300px; position: absolute; left: 100px;
+top: 100px;">
 
 
 
@@ -549,8 +547,8 @@ top: 120px;">
 
                     <script>
                             document.addEventListener('DOMContentLoaded', function () {
-                                    var experienciaWindow = document.getElementById('experiencia');
-                                    var experienciaTab = document.getElementById('experiencia-tab');
+                                    var plastico2Window = document.getElementById('plastico2');
+                                    var plastico2Tab = document.getElementById('plastico2-tab');
                                     var isMaximized = false;
                                     var normalWidth = "100%";
                                     var normalHeight = "100%";
@@ -558,61 +556,61 @@ top: 120px;">
                                     var maximizedHeight = "91.5vh";
 
                                     function minimizeWindow() {
-                                        experienciaWindow.style.display = 'none';
+                                        plastico2Window.style.display = 'none';
 
-                                        experienciaTab.classList.remove('tab-novo');
-                                        experienciaTab.classList.add('tab-novo-2');
+                                        plastico2Tab.classList.remove('tab-novo');
+                                        plastico2Tab.classList.add('tab-novo-2');
                                     }
 
                                     function maximizeWindow() {
                                         if (isMaximized) {
                                         // Restoring normal state
-                                        experienciaWindow.style.width = normalWidth;
-                                        experienciaWindow.style.height = normalHeight;
+                                        plastico2Window.style.width = normalWidth;
+                                        plastico2Window.style.height = normalHeight;
 
-                                        experienciaWindow.style.left = "100px";
-                                        experienciaWindow.style.top = "100px";
-                                        experienciaWindow.style.zIndex = 999999999;
+                                        plastico2Window.style.left = "100px";
+                                        plastico2Window.style.top = "100px";
+                                        plastico2Window.style.zIndex = 999999999;
 
                                     } else {
                                         // Maximizing
-                                        normalWidth = experienciaWindow.style.width;
-                                        normalHeight = experienciaWindow.style.height;
-                                        experienciaWindow.style.width = maximizedWidth;
-                                        experienciaWindow.style.height = maximizedHeight;
+                                        normalWidth = plastico2Window.style.width;
+                                        normalHeight = plastico2Window.style.height;
+                                        plastico2Window.style.width = maximizedWidth;
+                                        plastico2Window.style.height = maximizedHeight;
 
-                                        experienciaWindow.style.left = "-0.5rem";
-                                        experienciaWindow.style.top = "0";
-                                        experienciaWindow.style.zIndex = 99999999;
+                                        plastico2Window.style.left = "-0.5rem";
+                                        plastico2Window.style.top = "0";
+                                        plastico2Window.style.zIndex = 99999999;
                                     }
-                                    experienciaWindow.style.overflow = 'hidden'; // Ensure overflow: hidden is applied
+                                    plastico2Window.style.overflow = 'hidden'; // Ensure overflow: hidden is applied
                                     isMaximized = !isMaximized;
                                     }
 
                                     function closeWindow() {
-                                        experienciaWindow.style.display = 'none';
-                                        experienciaTab.style.display = 'none';
+                                        plastico2Window.style.display = 'none';
+                                        plastico2Tab.style.display = 'none';
 
-                                        experienciaTab.classList.remove('tab-novo-2');
-                                        experienciaTab.classList.add('tab-novo');
+                                        plastico2Tab.classList.remove('tab-novo-2');
+                                        plastico2Tab.classList.add('tab-novo');
                                     }
 
 
 
                                     function toggleWindow() {
-                                    if (experienciaWindow.style.display === 'block') {
-                                        experienciaWindow.style.display = 'none';
-                                        experienciaTab.classList.remove('tab-novo');
-                                        experienciaTab.classList.add('tab-novo-2');
+                                    if (plastico2Window.style.display === 'block') {
+                                    plastico2Window.style.display = 'none';
+                                    plastico2Tab.classList.remove('tab-novo');
+                                    plastico2Tab.classList.add('tab-novo-2');
                                 } else {
-                                    experienciaWindow.style.display = 'block';
-                                    experienciaTab.classList.remove('tab-novo-2');
-                                    experienciaTab.classList.add('tab-novo');
+                                    plastico2Window.style.display = 'block';
+                                    plastico2Tab.classList.remove('tab-novo-2');
+                                    plastico2Tab.classList.add('tab-novo');
                                 }
                                     }
 
                     // Attach the toggleWindow function to the tab click event
-                    experienciaTab.addEventListener('click', toggleWindow);
+                    plastico2Tab.addEventListener('click', toggleWindow);
 
 
 
@@ -633,12 +631,11 @@ top: 120px;">
                                     }
                                 });
                     </script>
-
-                  
-
-
                 </div>
-            </div>  
+            </div>
+
+
+
 
 
             <div class="options line">
@@ -651,11 +648,17 @@ top: 120px;">
             </div>
 
 
-            <div class="content white">
+            
+
+
+
+            </div>
+
+
+
+
 
         </div>
-    </div>  
-
 
 
 
@@ -680,7 +683,9 @@ top: 120px;">
                         <div class="item">Favorites</div>
                         <div class="item">Tools</div>
                         <div class="item">Help</div>
-
+                        <!--  <div class="item float-right"><img
+                                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAiCAIAAACMQi3OAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuNSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjItMDktMThUMTc6MzM6MTErMDE6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDktMThUMTc6MzM6MTErMDE6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIyLTA5LTE4VDE3OjMzOjExKzAxOjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ODAwNjBhLTVmNGUtNDY2Zi1iZmU5LTEwMzRlOGNlMGU1ZSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmQ1ZDRhNDdkLTk1NjgtZjc0Mi1h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"
+                                  alt="" /></div> -->
                     </div>
                     <div class="options padding">
                         <div class="item">Address</div>
@@ -890,8 +895,7 @@ top: 120px;">
 
 
 
-                <div class="window documents windows-box-shadow" style="width: 500px; height: 300px; position: absolute; left: 180px;
-                top: 180px;">
+                <div class="window documents windows-box-shadow">
                     <div class="header">
                         <label for="windows-documents-input-on-top">Solução 1</label>
                         <div class="header-buttons">
@@ -915,7 +919,6 @@ top: 120px;">
                             <div class="text">teste</div>
                         </label>
 
-                        
                         <div id="plastico-icon">
                             <div class="desktop-item">
                                 <div class="icon"><img src="img/folder1.png" alt="" /></div>
@@ -923,28 +926,11 @@ top: 120px;">
                             </div>
                         </div>
 
-                    
-
-
-
-                        
 
                         <script>
                         document.getElementById('plastico-icon').addEventListener('click', function () {
                         var plasticoTab = document.getElementById('plastico-tab');
                         var plasticoWindow = document.getElementById('plastico');
-
-                        var windowsUpdateWindow = document.querySelector('.window.update');
-                       
-
-
-
-                        if (windowsUpdateWindow.style.display === 'none' || windowsUpdateWindow.style.display === '') {
-                            windowsUpdateWindow.style.display = 'block';
-                        } else {
-                            windowsUpdateWindow.style.display = 'none';
-                        }
-
 
                         if (plasticoTab.style.display === 'flex') {
 
@@ -960,8 +946,6 @@ top: 120px;">
 
                             plasticoTab.classList.remove('tab-novo-2');
                             plasticoTab.classList.add('tab-novo');
-
-                            plasticoWindow.classList.add('update');
                         }
                     });
 
@@ -1039,7 +1023,7 @@ top: 120px;">
              </textarea>
                     </div>
                 </div>
-             <!--   <div class="window minesweeper windows-box-shadow">
+                <div class="window minesweeper windows-box-shadow">
                     <div class="header">
                         <label for="windows-minesweeper-input-on-top">Minesweeper</label>
                         <div class="header-buttons">
@@ -1131,9 +1115,9 @@ top: 120px;">
                             <div></div>
                             <div></div>
                         </div>
-                    </div> -->
+                    </div>
 
-                 <!--   <div class="content">
+                    <div class="content">
                         <label for="data-id-1-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
                         <label for="data-id-2-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
                         <label for="data-id-3-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
@@ -1198,8 +1182,8 @@ top: 120px;">
                         <label for="data-id-8-8" class="minesweeper-block end" data-type="1">1</label>
                     </div>
                 </div>
-            </div> -->
-        </div> 
+            </div>
+        </div>
         <div id="start-bar">
             <div id="start-button-items">
                 <label id="start-button" class="windows-box-shadow" for="start-button-input"></label>
@@ -1234,7 +1218,7 @@ top: 120px;">
                         <span><img src="img/folder1.png" alt="" /></span><span>Solução 2</span>
                     </label>
 
-                    <label for="experiencia" class="tab-novo tab windows-box-shadow" id="experiencia-tab">
+                    <label for="plastico2" class="tab-novo tab windows-box-shadow" id="plastico2-tab">
                         <span><img src="img/folder1.png" alt="" /></span><span>Solução 3</span>
                     </label>
 
@@ -1268,12 +1252,12 @@ top: 120px;">
                                  alt="" />
                         </span><span>Reciclagem</span>
                     </label>
-               <!--     <label for="windows-minesweeper-input-min" class="minesweeper-tab tab windows-box-shadow">
+                    <label for="windows-minesweeper-input-min" class="minesweeper-tab tab windows-box-shadow">
                         <span>
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBhgXExWY7op1AAABHElEQVRIx81VWw7DIAwz0+4FR0tvBifLPsIjIdBWqyYtVUHbsB0bxIB/LwafL3idw1lIvia4UeGk+VsrgwMFmQe+AAASxm87MgYzyyiVzZh5rBigt2+Iu2pGRAFwiP7SibMg8DjBgIzUjBjURNB6K85fBpAWBG4bC0o3kNVM69wMQdXPZtRzajQqxGAJxH0xjq02TbjWAYOb86OHxmCQIlBUfStfTZsBREQcSLVtqyov9W/IGJHDoY4MMTHqKA/V1zy9A5VEUbpk/M+fBWVCtDswB2jgLsRaWQHn9Gl7FkwWw7tOgZz3LQEUZEuBCwqsdZfw4Aiuy2BsiHwdE00i/kq7U9v7QN9460v15EbcREoXqT/+X7jRw68lntYHCbPf2nyUk7MAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjRUMjM6MTk6MjEtMDQ6MDCCvYp2AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI0VDIzOjE5OjIxLTA0OjAw8+AyygAAAABJRU5ErkJggg=="
                                  alt="" />
                         </span><span>Minesweeper</span>
-                    </label> -->
+                    </label>
                 </div>
             </div>
             <div id="start-menu" class="windows-box-shadow">
@@ -1325,7 +1309,7 @@ top: 120px;">
                     </li>
                 </ul>
             </div>
-          
+            <!-- <div id="time-options"></div> -->
             <div id="time-options">
                 <script>
                     function showTime() {
@@ -1333,20 +1317,20 @@ top: 120px;">
                         var hours = date.getHours();
                         var minutes = date.getMinutes();
 
-                      
+                        // Add leading zero if the value is less than 10
                         hours = (hours < 10) ? "0" + hours : hours;
                         minutes = (minutes < 10) ? "0" + minutes : minutes;
 
                         var timeString = hours + ":" + minutes;
 
-                       
+                        // Display the time in the element with id "clock"
                         document.getElementById("clock").innerHTML = timeString;
 
-                      
+                        // Update the time every 1 second (1000 milliseconds)
                         setTimeout(showTime, 1000);
                     }
 
-                 
+                    // Call the function to display the time when the page loads
                     window.onload = showTime;
                 </script>
                 <div id="clock"></div>

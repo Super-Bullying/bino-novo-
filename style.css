@@ -396,8 +396,8 @@ a.desktop-item {
     margin-top: 0;
     position: absolute;
     top: 14rem;
-    height: 20rem;
-    min-height: 20rem;
+    height: 35rem;
+    min-height: 30rem;
 }
 .window.update {
     width: 40rem;
@@ -408,6 +408,8 @@ a.desktop-item {
     top: 11rem;
     height: 16rem;
     min-height: 16rem;
+    z-index: 99999999999;
+    
 }
 .window.update-successful {
     width: 19rem;
@@ -759,9 +761,9 @@ textarea:focus {
    display: none;
    position: relative;
 
-}
+} 
 
-#plastico{
+#plastico, #experiencia{
     display: none;
     position: relative;
  
